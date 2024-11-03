@@ -76,7 +76,7 @@ const EventsSection = () => {
       date: "January XX, 2025",
       time: "12 Hours",
       venue: "MRD Auditorium",
-      description: "Questions ranging from Machine Learning, Blockchain, Web Development, Algorithms and much more. On solving every question, you get a clue which would be helpful for solving the special 11th question. The participants solved the problems by the deadline of 6:00 PM.",
+      description: "Questions ranging from Machine Learning, Blockchain, Web Development, Algorithms and much more. On solving every question, you get a clue which would be helpful for solving the special 11th question.",
       registrationLink: "#",
       imageUrl: "/images/NexHunt.webp", // Ensure path is correct
       comingSoon: false

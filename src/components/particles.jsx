@@ -18,7 +18,7 @@ const ParticleBackground = () => {
 
     // Particle system
     const particles = new THREE.BufferGeometry();
-    const particleCount = 20000;
+    const particleCount = 10000;
     const posArray = new Float32Array(particleCount * 3);
     
     for (let i = 0; i < particleCount * 3; i++) {
