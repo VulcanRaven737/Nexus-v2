@@ -1,13 +1,16 @@
 import React from 'react';
 import { Calendar, Clock, MapPin, ArrowUpRight } from 'lucide-react';
+import Image from 'next/image'; 
 
 const EventCard = ({ title, date, time, venue, description, registrationLink, imageUrl, comingSoon }) => (
   <div className="relative group h-[500px] overflow-hidden rounded-xl">
     <div className="absolute inset-0">
-      <img 
+      <Image 
         src={imageUrl} 
         alt={title} 
-        className="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-700"
+        layout="fill" 
+        objectFit="cover"
+        className="transform group-hover:scale-105 transition-all duration-700"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/90 transition-all duration-500" />
     </div>
@@ -65,7 +68,7 @@ const EventsSection = () => {
       venue: "PESU52",
       description: "Our flagship hackathon where innovators compete to develop cutting-edge solutions using emerging technologies. Join us for 48 hours of coding, creativity, and breakthrough innovations.",
       registrationLink: "#",
-      imageUrl: "NexCode.webp",
+      imageUrl: "/images/NexCode.webp", // Ensure path is correct
       comingSoon: false
     },
     {
@@ -75,13 +78,13 @@ const EventsSection = () => {
       venue: "MRD Auditorium",
       description: "Questions ranging from Machine Learning, Blockchain, Web Development, Algorithms and much more. On solving every question, you get a clue which would be helpful for solving the special 11th question. The participants solved the problems by the deadline of 6:00 PM.",
       registrationLink: "#",
-      imageUrl: "NexHunt.webp",
+      imageUrl: "/images/NexHunt.webp", // Ensure path is correct
       comingSoon: false
     },
     {
       title: "NeuroNex",
-      description: "An revolutionary event focused on the intersection of neuroscience and technology. Explore the frontiers of brain-computer interfaces and neural engineering.",
-      imageUrl: "NeuroNex-1.webp",
+      description: "A revolutionary event focused on the intersection of neuroscience and technology. Explore the frontiers of brain-computer interfaces and neural engineering.",
+      imageUrl: "/images/NeuroNex-1.webp", // Ensure path is correct
       comingSoon: true
     }
   ];

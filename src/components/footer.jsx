@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import Link from 'next/link'; 
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,22 +13,32 @@ const Footer = () => {
             <h3 className="font-michroma text-2xl bg-gradient-to-r from-[#6439FF] via-[#4F75FF] to-[#00CCDD] inline-block text-transparent bg-clip-text">
               NEXUS
             </h3>
-            <p className="font-spacemono text-sm text-gray-400 max-w-sm">Explore innovation with Nexus, vertical of PES University's CSE department</p>
+            <p className="font-spacemono text-sm text-gray-400 max-w-sm">
+              Explore innovation with Nexus, vertical of PES University&apos;s CSE department
+            </p>
           </div>
           <div className="space-y-4">
             <h4 className="font-michroma text-lg">Quick Links</h4>
             <ul className="space-y-2 font-spacemono text-sm text-gray-400">
               <li>
-                <a href="/" className="hover:text-[#00CCDD] transition-colors">Home</a>
+                <Link href="/" className="hover:text-[#00CCDD] transition-colors">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="/projects" className="hover:text-[#00CCDD] transition-colors">Projects</a>
+                <Link href="/projects" className="hover:text-[#00CCDD] transition-colors">
+                  Projects
+                </Link>
               </li>
               <li>
-                <a href="/events" className="hover:text-[#00CCDD] transition-colors">Events</a>
+                <Link href="/events" className="hover:text-[#00CCDD] transition-colors">
+                  Events
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-[#00CCDD] transition-colors">About Us</a>
+                <Link href="/about" className="hover:text-[#00CCDD] transition-colors">
+                  About Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -55,12 +66,12 @@ const Footer = () => {
               © {currentYear} NEXUS. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="/privacy" className="font-spacemono text-sm text-gray-400 hover:text-[#00CCDD] transition-colors">
+              <Link href="/privacy" className="font-spacemono text-sm text-gray-400 hover:text-[#00CCDD] transition-colors">
                 Privacy Policy
-              </a>
-              <a href="/terms" className="font-spacemono text-sm text-gray-400 hover:text-[#00CCDD] transition-colors">
+              </Link>
+              <Link href="/terms" className="font-spacemono text-sm text-gray-400 hover:text-[#00CCDD] transition-colors">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>

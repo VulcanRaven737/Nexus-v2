@@ -1,13 +1,16 @@
 import React from 'react';
 import { ArrowUpRight, Github } from 'lucide-react';
+import Image from 'next/image';
 
 const ProjectCard = ({ title, description, image, githubLink, demoLink }) => (
   <div className="group relative bg-black/20 backdrop-blur-sm rounded-lg p-6 border border-gray-800 hover:border-[#4F75FF] transition-all duration-300 overflow-hidden">
     <div className="relative h-48 rounded-lg overflow-hidden mb-6">
-      <img 
+      <Image 
         src={image} 
         alt={title} 
         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+        width={500}
+        height={200}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
     </div>
@@ -43,42 +46,42 @@ const ProjectsSection = () => {
     {
       title: "AI Assistant",
       description: "A next-generation AI assistant powered by machine learning, offering personalized support and intelligent automation for enhanced productivity.",
-      image: "ai.jpeg",
+      image: "/images/ai.jpeg",
       githubLink: "#",
       demoLink: "#"
     },
     {
       title: "Quantum Computing",
       description: "Exploring quantum algorithms and their applications in solving complex computational problems with unprecedented efficiency.",
-      image: "quantum.jpeg",
+      image: "/images/quantum.jpeg",
       githubLink: "#",
       demoLink: "#"
     },
     {
       title: "Blockchain Platform",
       description: "A decentralized platform leveraging blockchain technology for secure, transparent, and efficient digital transactions.",
-      image: "blockchain.jpeg",
+      image: "/images/blockchain.jpeg",
       githubLink: "#",
       demoLink: "#"
     },
     {
       title: "IoT Ecosystem",
       description: "An interconnected system of smart devices providing real-time monitoring and automated control for enhanced living spaces.",
-      image: "iot.jpeg",
+      image: "/images/iot.jpeg",
       githubLink: "#",
       demoLink: "#"
     },
     {
       title: "Neural Interface",
       description: "Advanced brain-computer interface technology enabling direct neural communication for revolutionary medical applications.",
-      image: "neural.jpeg",
+      image: "/images/neural.jpeg",
       githubLink: "#",
       demoLink: "#"
     },
     {
       title: "Green Energy",
       description: "Innovative renewable energy solutions combining solar, wind, and advanced storage technologies for sustainable power generation.",
-      image: "green.jpeg",
+      image: "/images/green.jpeg",
       githubLink: "#",
       demoLink: "#"
     }
@@ -86,7 +89,6 @@ const ProjectsSection = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16 mb-60">
-      {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
