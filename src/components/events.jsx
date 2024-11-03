@@ -12,7 +12,7 @@ const EventCard = ({ title, date, time, venue, description, registrationLink, im
         objectFit="cover"
         className="transform group-hover:scale-105 transition-all duration-700"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/90 transition-all duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/80 to-black/120 group-hover:from-black/110 group-hover:via-black/90 group-hover:to-black/130 transition-all duration-500" />
     </div>
     <div className="relative h-full p-8 flex flex-col justify-between">
       <div>

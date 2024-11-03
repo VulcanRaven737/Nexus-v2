@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const navigationItems = ['Home', 'About', 'Our Projects', 'Events'];
+  const navigationItems = ['Home', 'About', 'Projects', 'Events'];
 
   return (
     <nav className="bg-[#18181b] border-b border-zinc-800 bg-opacity-50">
