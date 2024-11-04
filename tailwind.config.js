@@ -19,7 +19,7 @@ module.exports = {
       keyframes: {
         typing: {
           "0%": { width: "0%" },
-          "100%": { width: "30%" }, // full text width for the typing effect
+          "100%": { width: "22%" }, // full text width for the typing effect
         },
         blink: {
           "50%": { borderColor: "transparent" },

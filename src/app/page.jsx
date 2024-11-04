@@ -47,7 +47,7 @@ export default function Home() {
       <Navbar />
       <ParticleBackground />
       <div className="mt-48 flex flex-col items-center justify-center">
-        <p className="bg-gradient-to-r from-[#6439FF] via-[#4F75FF] to-[#00CCDD] inline-block text-transparent bg-clip-text font-bold md:text-8xl sm:text-8xl subpixel-antialiased text-center font-michroma overflow-hidden whitespace-nowrap border-r-2 border-foreground animate-typing">NEXUS</p>
+        <p className="bg-gradient-to-r from-[#6439FF] via-[#4F75FF] to-[#00CCDD] inline-block text-transparent bg-clip-text font-bold md:text-6xl sm:text-6xl subpixel-antialiased text-center font-michroma overflow-hidden whitespace-nowrap border-r-2 border-foreground animate-typing">NEXUS</p>
         <p className="text-center max-w-screen-md w-full overflow-x text-balance mt-12 font-bold subpixel-antialiased font-michroma md:text-3xl sm:text-3xl">&quot;Tomorrow&apos;s Technology for Today&apos;s World!&quot;</p>
         <p className="break-normal text-center max-w-screen-md w-full overflow-x text-balance mt-12 font-bold md:text-sm sm:text-sm subpixel-antialiased font-spacemono">Charting the Course of Innovation: Spearheading Revolutionary Advancements and Transformations in the Dynamic Landscape of Technology and Engineering.</p>
       </div>
